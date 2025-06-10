@@ -2,33 +2,45 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Kapa Sri Lakshmi - Resume</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kapa Sri Lakshmi - Portfolio</title>
   <style>
     body {
       font-family: 'Segoe UI', sans-serif;
-      background-color: #f4f6f8;
-      color: #333;
+      background: linear-gradient(to right, #f0f4f8, #ffffff);
       margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #0056b3;
+      color: white;
       padding: 20px;
+      text-align: center;
+    }
+    nav {
+      background-color: #004080;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
     }
     .container {
-      max-width: 800px;
-      margin: auto;
+      max-width: 900px;
+      margin: 20px auto;
       background-color: white;
       padding: 30px;
       border-radius: 10px;
       box-shadow: 0 0 15px rgba(0,0,0,0.1);
     }
-    h1, h2 {
+    h2 {
       color: #0056b3;
-    }
-    a {
-      color: #0056b3;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
     }
     ul {
       padding-left: 20px;
@@ -36,45 +48,63 @@
     .section {
       margin-bottom: 30px;
     }
+    .download {
+      display: block;
+      text-align: center;
+      margin: 30px 0;
+    }
+    .download a {
+      background-color: #0056b3;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .download a:hover {
+      background-color: #003d80;
+    }
+    .profile-img {
+      display: block;
+      margin: 0 auto 20px;
+      border-radius: 50%;
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+    }
   </style>
 </head>
 <body>
-  <div class="container">
+  <header>
     <h1>Kapa Sri Lakshmi</h1>
-    <p>
-      📞 +91 79951 41586<br>
-      ✉️ <a href="mailto:kapasrilakshmi7@gmail.com">kapasrilakshmi7@gmail.com</a><br>
-      🔗 <a href="https://www.linkedin.com/in/kapa-srilakshmi-4a0602354/" target="_blank">LinkedIn Profile</a><br>
-      📍 Tirupati, Andhra Pradesh
-    </p>
+    <p>Web Developer | CSE Student | Mohan Babu University</p>
+  </header>
 
-    <div class="section">
+  <nav>
+    <a href="#education">Education</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <div class="container">
+    <img src="https://via.placeholder.com/150" alt="Profile Photo" class="profile-img" />
+
+    <div class="section" id="education">
       <h2>🎓 Education</h2>
       <p><strong>B.Tech in Computer Science</strong><br>
       Mohan Babu University, Tirupati<br>
       Expected Graduation: 2026</p>
     </div>
 
-    <div class="section">
+    <div class="section" id="skills">
       <h2>💻 Technical Skills</h2>
       <ul>
         <li>Languages: C, Java</li>
         <li>Web Development: HTML, CSS</li>
         <li>Tools: VS Code, Git (basic), MS Office</li>
       </ul>
-    </div>
-
-    <div class="section">
-      <h2>💼 Projects</h2>
-      <p><strong>1. Personal Portfolio Website:</strong><br>
-      Created using HTML and CSS showcasing my contact, LinkedIn, skills, and projects.</p>
-
-      <p><strong>2. Simple Calculator (Java):</strong><br>
-      Built a Java-based calculator for basic arithmetic operations.</p>
-    </div>
-
-    <div class="section">
-      <h2>🧠 Personal Skills</h2>
+      <h3>🧠 Personal Skills</h3>
       <ul>
         <li>Quick learner</li>
         <li>Team player</li>
@@ -83,9 +113,27 @@
       </ul>
     </div>
 
-    <div class="section">
-      <h2>🎯 Objective</h2>
-      <p>Aspiring web developer currently pursuing B.Tech in CSE. Eager to learn through real-world experience and contribute to a dynamic team. Looking for opportunities to enhance my technical and professional skills through internships.</p>
+    <div class="section" id="projects">
+      <h2>💼 Projects</h2>
+      <p><strong>1. Personal Portfolio Website:</strong><br>
+      Created using HTML and CSS showcasing my contact, LinkedIn, skills, and projects.</p>
+
+      <p><strong>2. Simple Calculator (Java):</strong><br>
+      Built a Java-based calculator for basic arithmetic operations.</p>
+    </div>
+
+    <div class="section" id="contact">
+      <h2>📬 Contact</h2>
+      <p>
+        📞 +91 79951 41586<br>
+        ✉️ <a href="mailto:kapasrilakshmi7@gmail.com">kapasrilakshmi7@gmail.com</a><br>
+        🔗 <a href="https://www.linkedin.com/in/kapa-srilakshmi-4a0602354/" target="_blank">LinkedIn Profile</a><br>
+        📍 Tirupati, Andhra Pradesh
+      </p>
+    </div>
+
+    <div class="download">
+      <a href="Kapa_Sri_Lakshmi_Resume.pdf" download>📄 Download Resume (PDF)</a>
     </div>
   </div>
 </body>
