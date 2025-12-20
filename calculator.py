@@ -15,4 +15,5 @@ elif operation == '%':
 elif operation == '//':
     print( a // b)
 else:
-    print("Invalid operator")
+
+    print("operator not found ")
